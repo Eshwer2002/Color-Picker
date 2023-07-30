@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="icon" href="color-palette.png">
+
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <button type="button" name="button">CLICK ME</button>
+    <p id="color"></p>
+
+    <div class="container">
+      <div class="wrapper">
+        R <input type="range" min="0" max="255" value="0" id="red" oninput="colors()">
+      </div>
+      <div class="wrapper">
+        G <input type="range" min="0" max="255" value="0" id="green" oninput="colors()">
+      </div>
+      <div class="wrapper">
+        B <input type="range" min="0" max="255" value="0" id="blue" oninput="colors()" on>
+      </div>
+      <span id="output">rgb(0,0,0)</span>
+    </div>
+
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
